@@ -26,7 +26,7 @@ function loadFooter() {
                     <li><a href="index.html#about">À propos de nous</a></li>
                     <li><a href="index.html#services">Nos Services</a></li>
                     <li><a href="index.html#commitments">Nos Engagements</a></li>
-                    <li><a href="#careers">Carrières</a></li>
+                    <li><a href="careers.html">Carrières</a></li>
                 </ul>
             </div>
 
