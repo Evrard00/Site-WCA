@@ -1486,10 +1486,17 @@ body {
 
 /* Services Header */
 .services-header-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--spacing-xxl);
+    align-items: center;
+    margin-bottom: var(--spacing-xxl);
+}
+
+.services-header-left {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
-    margin-bottom: var(--spacing-xxl);
 }
 
 .services-badge {
@@ -2884,10 +2891,17 @@ body {
 
 /* Header avec titre et description */
 .fleet-header-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--spacing-xxl);
+    align-items: center;
+    margin-bottom: var(--spacing-xxl);
+}
+
+.fleet-header-left {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
-    margin-bottom: var(--spacing-xxl);
 }
 
 .fleet-badge {
