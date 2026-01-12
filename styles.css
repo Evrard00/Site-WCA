@@ -4217,6 +4217,36 @@ body {
     font-weight: 600;
 }
 
+.contact-form .btn-primary,
+.quote-form .btn-primary {
+    width: 100%;
+    background: var(--red-wca);
+    color: white;
+    border: 2px solid var(--red-wca);
+    transition: all 0.3s ease;
+}
+
+.contact-form .btn-primary:hover,
+.quote-form .btn-primary:hover {
+    background: var(--blue-wca);
+    border-color: var(--blue-wca);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(40, 87, 163, 0.4);
+}
+
+.contact-success .btn-secondary,
+.quote-success .btn-secondary {
+    transition: all 0.3s ease;
+}
+
+.contact-success .btn-secondary:hover,
+.quote-success .btn-secondary:hover {
+    background: white;
+    color: var(--blue-wca);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
 .quote-success {
     text-align: center;
     padding: 60px 40px;
