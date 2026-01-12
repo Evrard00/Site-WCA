@@ -356,12 +356,12 @@ body {
     }
 
     .navbar-content .btn-contact {
-        padding: 6px 12px !important;
+        padding: 6px 18px !important;
         font-size: 0.8rem !important;
         margin-left: auto;
         flex-shrink: 1;
         min-width: auto;
-        max-width: 110px;
+        max-width: 150px;
         white-space: nowrap;
         box-shadow: 0 2px 8px rgba(228, 31, 38, 0.25);
         height: auto !important;
@@ -430,10 +430,10 @@ body {
     }
 
     .btn-contact {
-        padding: 8px 16px !important;
+        padding: 8px 20px !important;
         font-size: 0.7rem !important;
         min-width: auto;
-        max-width: 100px;
+        max-width: 130px;
         height: auto;
         min-height: 28px;
         border-radius: 20px;
