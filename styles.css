@@ -995,7 +995,7 @@ body {
     }
 
     .services-badge {
-        width: 100%;
+        width: fit-content;
     }
 
     .services-title {
@@ -1890,7 +1890,7 @@ body {
     }
 
     .services-badge {
-        width: 100%;
+        width: fit-content;
     }
 
     .services-title {
@@ -1920,7 +1920,7 @@ body {
     }
 
     .fleet-badge {
-        width: 100%;
+        width: fit-content;
     }
 
     .fleet-title {
