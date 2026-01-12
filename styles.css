@@ -299,7 +299,15 @@ body {
     }
 
     .navbar-content {
-        gap: var(--spacing-md) !important;
+        gap: var(--spacing-sm) !important;
+    }
+
+    .navbar-pill {
+        padding: var(--spacing-xs) var(--spacing-sm) !important;
+    }
+
+    .logo-img {
+        height: 32px;
     }
 
     .nav {
@@ -340,9 +348,12 @@ body {
     }
 
     .btn-contact {
-        padding: 10px 16px;
-        font-size: 0.85rem;
+        padding: 8px 12px;
+        font-size: 0.8rem;
         margin-left: auto;
+        flex-shrink: 0;
+        min-width: 100px;
+        white-space: nowrap;
     }
 }
 
@@ -1372,18 +1383,11 @@ body {
 }
 
 /* Services Header */
-.services-header {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: var(--spacing-xxl);
-    align-items: center;
-    margin-bottom: var(--spacing-xxl);
-}
-
-.services-header-left {
+.services-header-wrapper {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xxl);
 }
 
 .services-badge {
@@ -1421,13 +1425,6 @@ body {
     margin: 0;
 }
 
-.services-header-right {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-lg);
-    padding-top: var(--spacing-md);
-}
-
 .services-description {
     font-size: 1rem;
     color: var(--light-text);
@@ -1435,6 +1432,7 @@ body {
     letter-spacing: 0.4px;
     margin: 0;
     font-weight: 400;
+    max-width: 800px;
 }
 
 .services-cta-btn {
@@ -2784,11 +2782,36 @@ body {
 
 /* Header avec titre et description */
 .fleet-header-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: var(--spacing-xxl);
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
     margin-bottom: var(--spacing-xxl);
+}
+
+.fleet-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(40, 87, 163, 0.2);
+    background: linear-gradient(135deg, 
+        rgba(40, 87, 163, 0.15) 0%, 
+        rgba(228, 31, 38, 0.08) 100%);
+    color: var(--blue-wca);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.fleet-badge svg {
+    width: 14px;
+    height: 14px;
 }
 
 .fleet-title {
@@ -2805,6 +2828,7 @@ body {
     color: var(--light-text);
     line-height: 1.6;
     margin: 0;
+    max-width: 800px;
 }
 
 /* Split Layout */
