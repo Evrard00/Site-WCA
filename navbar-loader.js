@@ -20,8 +20,15 @@ function loadNavbar() {
                     <img src="WCA.png" alt="WCA Logo" class="logo-img">
                 </a>
 
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
                 <!-- Navigation Links -->
-                <nav class="nav">
+                <nav class="nav" id="navMenu">
                     <ul class="nav-list">
                         <li><a href="index.html#about" class="nav-link">À propos</a></li>
                         <li><a href="index.html#services" class="nav-link">Services</a></li>
@@ -41,6 +48,26 @@ function loadNavbar() {
     const navbarContainer = document.getElementById('navbar-container');
     if (navbarContainer) {
         navbarContainer.innerHTML = navbarHTML;
+        
+        // Initialize hamburger menu functionality
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            
+            // Close menu when a link is clicked
+            const navLinks = navMenu.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+        }
     }
 }
 

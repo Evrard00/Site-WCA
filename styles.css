@@ -45,6 +45,12 @@ body {
     padding: 0 var(--spacing-lg);
 }
 
+@media (max-width: 767px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+}
+
 /* ========================
    SCROLL BUTTON
    ======================== */
@@ -252,6 +258,93 @@ body {
 /* ========================
    RESPONSIVE HEADER
    ======================== */
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.hamburger span {
+    width: 24px;
+    height: 2px;
+    background-color: var(--blue-wca);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar-content {
+        gap: var(--spacing-md) !important;
+    }
+
+    .nav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav.active {
+        max-height: 400px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 0;
+        padding: var(--spacing-md);
+    }
+
+    .nav-link {
+        color: var(--blue-wca) !important;
+        padding: var(--spacing-sm) 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .btn-contact {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+        margin-left: auto;
+    }
+}
 
 @media (max-width: 1024px) {
     .navbar-pill {
@@ -934,6 +1027,31 @@ body {
 .btn-large {
     padding: var(--spacing-sm) var(--spacing-xl);
     font-size: 1.05rem;
+}
+
+/* Responsive Button Styles */
+@media (max-width: 767px) {
+    .btn {
+        font-size: 0.95rem;
+        padding: 12px var(--spacing-md);
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-large {
+        width: 100%;
+        padding: 14px var(--spacing-md);
+        font-size: 1rem;
+    }
+
+    .contact-form .btn-primary,
+    .quote-form .btn-primary,
+    .careers-form .btn-large {
+        width: 100%;
+        min-height: 48px;
+    }
 }
 
 /* ========================
