@@ -347,13 +347,91 @@ body {
         display: none;
     }
 
-    .btn-contact {
-        padding: 8px 12px;
-        font-size: 0.8rem;
+    .navbar-content .btn-contact {
+        padding: 4px 6px !important;
+        font-size: 0.75rem !important;
         margin-left: auto;
         flex-shrink: 0;
-        min-width: 100px;
+        min-width: auto;
         white-space: nowrap;
+        box-shadow: 0 2px 8px rgba(228, 31, 38, 0.25);
+        height: auto !important;
+        min-height: 26px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        gap: 2px !important;
+        line-height: 1;
+        border-radius: 18px !important;
+    }
+
+    .btn-contact {
+        padding: 4px 6px !important;
+        font-size: 0.75rem !important;
+        margin-left: auto;
+        flex-shrink: 0;
+        min-width: auto;
+        white-space: nowrap;
+        box-shadow: 0 2px 8px rgba(228, 31, 38, 0.25);
+        height: auto;
+        min-height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px !important;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 6px var(--spacing-sm);
+    }
+
+    .navbar-pill {
+        padding: 4px 6px !important;
+    }
+
+    .navbar-content {
+        gap: 2px !important;
+    }
+
+    .logo-img {
+        height: 24px;
+    }
+
+    .hamburger {
+        gap: 4px;
+        padding: 4px;
+    }
+
+    .hamburger span {
+        width: 18px;
+        height: 1.5px;
+    }
+
+    .btn-contact {
+        padding: 3px 6px !important;
+        font-size: 0.65rem !important;
+        min-width: auto;
+        max-width: 90px;
+        height: auto;
+        min-height: 24px;
+        border-radius: 16px;
+        gap: 2px !important;
+        line-height: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .btn-contact span {
+        display: inline;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .btn-contact span {
+        display: inline;
     }
 }
 
