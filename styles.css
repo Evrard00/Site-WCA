@@ -980,17 +980,68 @@ body {
 
 @media (max-width: 480px) {
     .services-header-wrapper {
-        display: flex;
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
         gap: var(--spacing-md);
         align-items: flex-start;
+        width: 100%;
+    }
+
+    .services-header-left {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        width: 100%;
+    }
+
+    .services-badge {
+        width: 100%;
+    }
+
+    .services-title {
+        font-size: 1.6rem;
+        font-weight: 950;
+        width: 100%;
+    }
+
+    .services-description {
+        font-size: 0.9rem;
+        width: 100%;
     }
 
     .fleet-header-wrapper {
-        display: flex;
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
         gap: var(--spacing-md);
         align-items: flex-start;
+        width: 100%;
+    }
+
+    .fleet-header-left {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        width: 100%;
+    }
+
+    .fleet-badge {
+        width: 100%;
+    }
+
+    .fleet-title {
+        font-size: 1.6rem;
+        font-weight: 950;
+        width: 100%;
+    }
+
+    .fleet-description {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .fleet-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
     }
 }
 
@@ -1824,23 +1875,63 @@ body {
 
 @media (max-width: 768px) {
     .services-header-wrapper {
-        display: flex;
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
         gap: var(--spacing-md);
         align-items: flex-start;
+        width: 100%;
+    }
+
+    .services-header-left {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        width: 100%;
+    }
+
+    .services-badge {
+        width: 100%;
+    }
+
+    .services-title {
+        font-size: 1.8rem;
+        font-weight: 950;
+        width: 100%;
+    }
+
+    .services-description {
+        font-size: 0.95rem;
+        width: 100%;
     }
 
     .fleet-header-wrapper {
-        display: flex;
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
         gap: var(--spacing-md);
         align-items: flex-start;
+        width: 100%;
     }
-}
 
-@media (max-width: 768px) {
-    .about {
-        padding: var(--spacing-xl) var(--spacing-lg);
+    .fleet-header-left {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        width: 100%;
+    }
+
+    .fleet-badge {
+        width: 100%;
+    }
+
+    .fleet-title {
+        font-size: 1.8rem;
+        font-weight: 950;
+        width: 100%;
+    }
+
+    .fleet-description {
+        font-size: 0.95rem;
+        width: 100%;
     }
 
     .about-wrapper {
