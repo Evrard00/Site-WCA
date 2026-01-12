@@ -250,6 +250,14 @@ body {
     box-shadow: 0 4px 16px rgba(228, 31, 38, 0.3);
 }
 
+.btn-text-desktop {
+    display: inline;
+}
+
+.btn-icon-mobile {
+    display: none;
+}
+
 .btn-contact:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 24px rgba(228, 31, 38, 0.4);
@@ -348,21 +356,32 @@ body {
     }
 
     .navbar-content .btn-contact {
-        padding: 4px 6px !important;
-        font-size: 0.75rem !important;
+        padding: 6px 12px !important;
+        font-size: 0.8rem !important;
         margin-left: auto;
-        flex-shrink: 0;
+        flex-shrink: 1;
         min-width: auto;
+        max-width: 110px;
         white-space: nowrap;
         box-shadow: 0 2px 8px rgba(228, 31, 38, 0.25);
         height: auto !important;
-        min-height: 26px;
+        min-height: 28px;
         display: flex !important;
         align-items: center;
         justify-content: center;
-        gap: 2px !important;
-        line-height: 1;
+        gap: 4px !important;
+        line-height: 1.2;
         border-radius: 18px !important;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .btn-text-desktop {
+        display: inline;
+    }
+
+    .btn-icon-mobile {
+        display: none;
     }
 
     .btn-contact {
@@ -411,27 +430,32 @@ body {
     }
 
     .btn-contact {
-        padding: 3px 6px !important;
-        font-size: 0.65rem !important;
+        padding: 8px 16px !important;
+        font-size: 0.7rem !important;
         min-width: auto;
-        max-width: 90px;
+        max-width: 100px;
         height: auto;
-        min-height: 24px;
-        border-radius: 16px;
-        gap: 2px !important;
-        line-height: 1;
-        overflow: hidden;
+        min-height: 28px;
+        border-radius: 20px;
+        gap: 4px !important;
+        line-height: 1.2;
+        white-space: nowrap;
+        flex-shrink: 1;
         text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .btn-text-desktop {
+        display: none;
+    }
+
+    .btn-icon-mobile {
+        display: inline !important;
     }
 
     .btn-contact span {
         display: inline;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .btn-contact span {
-        display: inline;
+        white-space: nowrap;
     }
 }
 
