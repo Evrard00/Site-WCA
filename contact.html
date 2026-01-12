@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez West Coast Atlantic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar (loaded from navbar-loader.js) -->
+    <div id="navbar-container"></div>
+
+    <script src="navbar-loader.js"></script>
+    <script src="navbar-init.js"></script>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="hero-content">
+            <h1 class="contact-hero-title">Nous sommes là pour vous écouter</h1>
+            <p class="contact-hero-subtitle">Posez-nous vos questions et découvrez comment nous pouvons optimiser vos solutions logistiques</p>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="contact-page-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Left: Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h2>Envoyer un message</h2>
+                        <p>Remplissez le formulaire ci-dessous et notre équipe vous répondra au plus vite</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nom">Nom & Prénom *</label>
+                                <input type="text" id="nom" name="nom" placeholder="Jean Dupont" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="societe">Société *</label>
+                                <input type="text" id="societe" name="societe" placeholder="Votre entreprise" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fonction">Fonction</label>
+                                <input type="text" id="fonction" name="fonction" placeholder="Directeur logistique">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresse e-mail *</label>
+                                <input type="email" id="email" name="email" placeholder="jean@exemple.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label for="telephone">Numéro de téléphone *</label>
+                                <input type="tel" id="telephone" name="telephone" placeholder="+225 XX XX XX XX" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label for="objet">Objet de votre demande</label>
+                                <input type="text" id="objet" name="objet" placeholder="Sujet de votre message">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label for="message">Votre message *</label>
+                                <textarea id="message" name="message" placeholder="Décrivez votre besoin ou votre question..." rows="5" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-disclaimer">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">J'accepte que mes informations soient utilisées pour me contacter *</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Envoyer mon message</button>
+                    </form>
+
+                    <div class="contact-success" id="contactSuccess" style="display: none;">
+                        <div class="success-container">
+                            <div class="success-icon">✓</div>
+                            <h3>Message envoyé avec succès !</h3>
+                            <p>Merci pour votre message. L'équipe WCA vous contactera très prochainement.</p>
+                            <a href="index.html" class="btn btn-secondary">Retour à l'accueil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Info & CTA -->
+                <div class="contact-info-wrapper">
+                    <!-- Direct Contact -->
+                    <div class="info-card featured">
+                        <h3>Contactez-nous directement</h3>
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div class="info-content">
+                                <p class="info-label">Téléphone</p>
+                                <a href="tel:+22524000000" class="info-value">+225 24 00 00 00</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">✉️</div>
+                            <div class="info-content">
+                                <p class="info-label">Email</p>
+                                <a href="mailto:contact@wca.ci" class="info-value">contact@wca.ci</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-content">
+                                <p class="info-label">Adresse</p>
+                                <p class="info-value">Abidjan, Côte d'Ivoire</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Response Time -->
+                    <div class="info-card">
+                        <h3>Horaires de réponse</h3>
+                        <div class="hours">
+                            <div class="hour-item">
+                                <span>Lun - Ven</span>
+                                <strong>8h - 18h</strong>
+                            </div>
+                            <div class="hour-item">
+                                <span>Samedi</span>
+                                <strong>9h - 13h</strong>
+                            </div>
+                            <div class="hour-item">
+                                <span>Dimanche</span>
+                                <strong>Fermé</strong>
+                            </div>
+                        </div>
+                        <p class="hours-note">Réponse généralement dans les 24 heures</p>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="info-card">
+                        <h3>Besoin d'un devis ?</h3>
+                        <p>Si vous avez un projet de transport ou logistique spécifique, accédez directement à notre formulaire de devis.</p>
+                        <a href="quote.html" class="btn btn-tertiary btn-block">Demander un devis</a>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="info-card social-card">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" title="Facebook">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (loaded from footer.html) -->
+    <div id="footer-container"></div>
+
+    <script src="footer-loader.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nom = document.getElementById('nom').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const societe = document.getElementById('societe').value.trim();
+            const telephone = document.getElementById('telephone').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const consent = document.getElementById('consent').checked;
+            
+            // Validation
+            if (!nom || !email || !societe || !telephone || !message) {
+                alert('Veuillez remplir tous les champs obligatoires');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Veuillez entrer une adresse email valide');
+                return;
+            }
+            
+            // Phone validation
+            const phoneRegex = /^[\d\s\+\-\(\)]+$/;
+            if (!phoneRegex.test(telephone)) {
+                alert('Veuillez entrer un numéro de téléphone valide');
+                return;
+            }
+            
+            if (!consent) {
+                alert('Veuillez accepter les conditions');
+                return;
+            }
+            
+            // Success
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('contactSuccess').style.display = 'block';
+            
+            // Optional: Reset form after 5 seconds
+            setTimeout(() => {
+                document.getElementById('contactForm').style.display = 'block';
+                document.getElementById('contactSuccess').style.display = 'none';
+                document.getElementById('contactForm').reset();
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+// Load footer on all pages
+function loadFooter() {
+    const footerHTML = `<footer class="footer">
+    <div class="footer-wrapper">
+        <div class="footer-content">
+            <!-- Column 1: Logo & Description -->
+            <div class="footer-column">
+                <div class="footer-logo-wrapper">
+                    <img src="WCA.png" alt="WCA Logo" class="footer-logo-img">
+                </div>
+                <p class="footer-description">Le professionnalisme à votre service. Expertise en distribution de produits pétroliers et marchandises diverses depuis 2014.</p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-icon" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="white"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+                    </a>
+                    <a href="#" class="footer-social-icon" title="Facebook">
+                        <svg viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-column">
+                <h4 class="footer-title">Liens Rapides</h4>
+                <ul class="footer-menu">
+                    <li><a href="index.html#about">À propos de nous</a></li>
+                    <li><a href="index.html#services">Nos Services</a></li>
+                    <li><a href="index.html#commitments">Nos Engagements</a></li>
+                    <li><a href="#careers">Carrières</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact Info -->
+            <div class="footer-column">
+                <h4 class="footer-title">Contact</h4>
+                <div class="footer-contact">
+                    <p class="footer-label">Adresse :</p>
+                    <p class="footer-text">Abidjan, Côte d'Ivoire</p>
+                    
+                    <p class="footer-label">Téléphone :</p>
+                    <p class="footer-text"><a href="tel:+22524000000">+225 22 00 00 00</a></p>
+                    
+                    <p class="footer-label">Email :</p>
+                    <p class="footer-text"><a href="mailto:contact@wca-ci.com">contact@wca-ci.com</a></p>
+                </div>
+            </div>
+
+            <!-- Column 4: Newsletter -->
+            <div class="footer-column">
+                <h4 class="footer-title">Infolettre</h4>
+                <p class="footer-newsletter-text">Recevez nos actualités logistiques</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-btn">S'inscrire</button>
+                </form>
+                <div class="footer-badges">
+                    <div class="badge">
+                        <span class="badge-icon">🛡️</span>
+                        <span>100% Géolocalisé</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span>Maintenance Certifiée</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2014-2026 West Coast Atlantic (WCA). Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>`;
+
+    const footerContainer = document.getElementById('footer-container');
+    if (footerContainer) {
+        footerContainer.innerHTML = footerHTML;
+    }
+}
+
+// Load footer when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadFooter);
+} else {
+    loadFooter();
+}

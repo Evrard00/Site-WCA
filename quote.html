@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de devis - West Coast Atlantic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar (loaded from navbar-loader.js) -->
+    <div id="navbar-container"></div>
+
+    <script src="navbar-loader.js"></script>
+    <script src="navbar-init.js"></script>
+
+    <!-- Quote Hero -->
+    <section class="quote-hero">
+        <div class="hero-content">
+            <h1 class="quote-hero-title">Demande de devis</h1>
+            <p class="quote-hero-subtitle">Recevez une offre personnalisée pour vos besoins en transport et logistique</p>
+        </div>
+    </section>
+
+    <!-- Main Quote Section -->
+    <section class="quote-page-section">
+        <div class="container">
+            <div class="quote-wrapper">
+                <!-- Form -->
+                <div class="quote-form-wrapper">
+                    <div class="form-header">
+                        <h2>Formulaire de devis</h2>
+                        <p>Remplissez ce formulaire et notre équipe vous proposera une solution adaptée</p>
+                    </div>
+
+                    <form class="quote-form" id="quoteForm">
+                    <!-- Informations Entreprise -->
+                    <div class="form-section-header">
+                        <h3>Informations entreprise</h3>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom">Nom & Prénom *</label>
+                            <input type="text" id="nom" placeholder="Votre nom complet" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="societe">Société *</label>
+                            <input type="text" id="societe" placeholder="Nom de votre entreprise" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fonction">Fonction *</label>
+                            <input type="text" id="fonction" placeholder="Votre titre ou rôle" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse e-mail *</label>
+                            <input type="email" id="email" placeholder="votremail@exemple.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="telephone">Numéro de téléphone *</label>
+                            <input type="tel" id="telephone" placeholder="+225 XX XX XX XX" required>
+                        </div>
+                    </div>
+
+                    <!-- Détails de la Demande -->
+                    <div class="form-section-header">
+                        <h3>Détails de la demande</h3>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width">
+                            <label for="service">Type de service *</label>
+                            <select id="service" required>
+                                    <option value="">-- Sélectionner un service --</option>
+                                    <option value="carburant">Transport carburant</option>
+                                    <option value="gpl">Transport GPL conditionné</option>
+                                    <option value="marchandises">Transport lubrifiants / marchandises</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="chargement">Lieu de chargement</label>
+                                <input type="text" id="chargement" placeholder="Ville ou adresse">
+                            </div>
+                            <div class="form-group">
+                                <label for="livraison">Lieu de livraison</label>
+                                <input type="text" id="livraison" placeholder="Ville ou adresse">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="volume">Volume / tonnage estimé</label>
+                                <input type="text" id="volume" placeholder="Ex: 10 tonnes">
+                            </div>
+                            <div class="form-group">
+                                <label for="frequence">Fréquence</label>
+                                <select id="frequence">
+                                    <option value="">-- Sélectionner --</option>
+                                    <option value="ponctuelle">Ponctuelle</option>
+                                    <option value="reguliere">Régulière</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label for="date">Date de démarrage souhaitée</label>
+                                <input type="date" id="date">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label for="contraintes">Contraintes spécifiques</label>
+                                <textarea id="contraintes" placeholder="Accès, sécurité, délais, etc..." rows="4"></textarea>
+                            </div>
+                        </div>
+
+                    <div class="form-disclaimer">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">J'accepte que mes informations soient utilisées pour me contacter *</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Soumettre la demande</button>
+                </form>
+
+                <div class="quote-success" id="quoteSuccess" style="display: none;">
+                    <div class="success-container">
+                        <div class="success-icon">✓</div>
+                        <h3>Votre demande a bien été envoyée !</h3>
+                        <p>Notre équipe vous contactera dans les plus brefs délais pour affiner votre devis.</p>
+                        <a href="index.html" class="btn btn-secondary">Retour à l'accueil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer (loaded from footer.html) -->
+    <div id="footer-container"></div>
+
+    <script src="footer-loader.js"></script>
+    <script>
+        // Pré-sélectionner le service depuis les paramètres d'URL
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const service = urlParams.get('service');
+            
+            if (service) {
+                const serviceSelect = document.getElementById('service');
+                if (serviceSelect) {
+                    serviceSelect.value = service;
+                }
+            }
+        });
+
+        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nom = document.getElementById('nom').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const societe = document.getElementById('societe').value.trim();
+            const telephone = document.getElementById('telephone').value.trim();
+            const service = document.getElementById('service').value;
+            const consent = document.getElementById('consent').checked;
+            
+            // Validation
+            if (!nom || !email || !societe || !telephone || !service) {
+                alert('Veuillez remplir tous les champs obligatoires');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Veuillez entrer une adresse email valide');
+                return;
+            }
+            
+            // Phone validation
+            const phoneRegex = /^[\d\s\+\-\(\)]+$/;
+            if (!phoneRegex.test(telephone)) {
+                alert('Veuillez entrer un numéro de téléphone valide');
+                return;
+            }
+
+            if (!consent) {
+                alert('Veuillez accepter les conditions');
+                return;
+            }
+            
+            // Success
+            document.getElementById('quoteForm').style.display = 'none';
+            document.getElementById('quoteSuccess').style.display = 'block';
+            
+            // Optional: Reset form after 5 seconds
+            setTimeout(() => {
+                document.getElementById('quoteForm').style.display = 'block';
+                document.getElementById('quoteSuccess').style.display = 'none';
+                document.getElementById('quoteForm').reset();
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

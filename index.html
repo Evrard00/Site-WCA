@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WCA - Transport sécurisé de carburant, GPL et marchandises en Côte d'Ivoire et sous-région depuis 2014">
+    <title>WCA - Solutions Logistiques Fiables | Transport Pétrolier & Marchandises</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar (loaded from navbar-loader.js) -->
+    <div id="navbar-container"></div>
+
+    <script src="navbar-loader.js"></script>
+    <script src="navbar-init.js"></script>
+
+    <!-- Scroll Button (Flèche flottante) -->
+    <div class="scroll-button" id="scrollButton">
+        <svg class="scroll-icon scroll-icon-down" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+        <svg class="scroll-icon scroll-icon-up" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <!-- Video Background -->
+        <video class="hero-bg" autoplay muted loop playsinline>
+            <source src="vid.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas les vidéos HTML5.
+        </video>
+        
+        <!-- Overlay dégradé -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Contenu -->
+        <div class="hero-content">
+            <h1 class="hero-title">
+                UNE LOGISTIQUE FLUIDE ET SÉCURISÉE
+            </h1>
+            
+            <p class="hero-subtitle">
+                Solutions expertes de transport d'hydrocarbures et de marchandises générales en Côte d'Ivoire et sous-région.
+            </p>
+            
+            <a href="quote.html" class="btn btn-pill btn-start">
+                <span>Demandez un devis</span>
+            </a>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Section Partenaires/Clients -->
+    <section class="partners-section">
+        <div class="container">
+            <h2 class="partners-title">Ils nous font confiance</h2>
+            <div class="partners-carousel">
+                <div class="partners-track">
+                    <img src="image1.png" alt="Partenaire 1" class="partner-logo">
+                    <img src="image2.png" alt="Partenaire 2" class="partner-logo">
+                    <img src="image3.png" alt="Partenaire 3" class="partner-logo">
+                    <img src="image4.png" alt="Partenaire 4" class="partner-logo">
+                    <img src="image5.png" alt="Partenaire 5" class="partner-logo">
+                    <!-- Répéter pour boucle infinie -->
+                    <img src="image1.png" alt="Partenaire 1" class="partner-logo">
+                    <img src="image2.png" alt="Partenaire 2" class="partner-logo">
+                    <img src="image3.png" alt="Partenaire 3" class="partner-logo">
+                    <img src="image4.png" alt="Partenaire 4" class="partner-logo">
+                    <img src="image5.png" alt="Partenaire 5" class="partner-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos de nous -->
+    <section id="about" class="about">
+        <div class="container">
+            <!-- Header avec badge et titre -->
+            <div class="about-header">
+                <div class="about-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8"/>
+                    </svg>
+                    À PROPOS DE WCA
+                </div>
+                <h1 class="about-title">Votre partenaire<br>de confiance</h1>
+            </div>
+
+            <!-- Layout 2 colonnes -->
+            <div class="about-wrapper">
+                <!-- Colonne Gauche : Texte -->
+                <div class="about-content">
+                    <p class="about-text">
+                        Fondée en 2014, West Coast Atlantic (WCA) est une entreprise spécialisée dans le transport et la distribution de produits pétroliers et de marchandises diverses.
+                    </p>
+                    
+                    <div class="about-text-expandable">
+                        <p class="about-text-hidden">
+                            Forte d'une solide expérience acquise aux côtés de groupes de référence tels que SHELL, IDC, TotalEnergies Marketing (TEMCI) et Petropower, WCA accompagne aujourd'hui des acteurs majeurs de l'énergie, de l'agro-industrie et du commerce.<br><br>
+                            Notre mission : garantir à nos clients un service logistique complet, compétitif et sécurisé, adapté aux exigences opérationnelles les plus élevées.
+                        </p>
+                    </div>
+                    
+                    <button class="about-toggle-btn" data-expanded="false">
+                        <span class="btn-text">Lire plus</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12l7 7 7-7"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Colonne Droite : Image -->
+                <div class="about-image">
+                    <img src="Team1.png" alt="Camions-citernes WCA - Transport de carburant">
+                </div>
+            </div>
+
+            <!-- Chiffres Clés (Grille simple) -->
+            <div class="about-metrics-grid">
+                <div class="metric-item">
+                    <div class="metric-value">44</div>
+                    <div class="metric-name">Véhicules</div>
+                    <div class="metric-desc">Une flotte moderne et diversifiée pour tous vos besoins logistiques.</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-value">706 m³</div>
+                    <div class="metric-name">Carburant</div>
+                    <div class="metric-desc">Capacité globale de transport de produits pétroliers.</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-value">528</div>
+                    <div class="metric-name">Tonnes</div>
+                    <div class="metric-desc">Capacité GPL, lubrifiants et marchandises diverses.</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-value">10 000 m²</div>
+                    <div class="metric-name">Garage</div>
+                    <div class="metric-desc">Garage privé avec service de maintenance intégré 24/7.</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-value">100%</div>
+                    <div class="metric-name">Géolocalisée</div>
+                    <div class="metric-desc">Suivi en temps réel de votre flotte.</div>
+                </div>
+            </div>
+
+            <!-- Bouton "En savoir plus" -->
+            <div class="about-cta">
+                <a href="#fleet" class="btn btn-learn-more">
+                    <span>En savoir plus</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M5 12l7 7 7-7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <!-- Header Services -->
+            <div class="services-header">
+                <div class="services-header-left">
+                    <div class="services-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="3" y="3" width="8" height="8"/>
+                            <rect x="13" y="3" width="8" height="8"/>
+                            <rect x="3" y="13" width="8" height="8"/>
+                            <rect x="13" y="13" width="8" height="8"/>
+                        </svg>
+                        NOS SERVICES
+                    </div>
+                    <h2 class="services-title">Des solutions de transport<br>robustes et sécurisées</h2>
+                </div>
+                
+                <div class="services-header-right">
+                    <p class="services-description">
+                        West Coast Atlantic déploie une ingénierie logistique de pointe pour le transport de produits pétroliers, GPL et marchandises diverses. Grâce à notre flotte géolocalisée et nos standards HSEQ rigoureux, nous garantissons l'intégrité de vos flux sur l'ensemble du territoire et de la sous-région.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <!-- Carte 1: Transport Carburant -->
+                <div class="service-card">
+                    <img src="caburant.png" alt="Transport Carburant" class="service-card-image">
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Transport Carburant</h3>
+                        <p class="service-card-description">Flotte de 29 camions citernes (4 à 45 m³).<br>Capacité globale : 706 m³.<br>Expertise en livraison de proximité (Last Mile).</p>
+                        <a href="quote.html?service=carburant" class="btn btn-service-cta">Demandez un devis</a>
+                    </div>
+                </div>
+
+                <!-- Carte 2: Transport GPL -->
+                <div class="service-card">
+                    <img src="gpl.png" alt="Gaz GPL" class="service-card-image">
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Gaz GPL</h3>
+                        <p class="service-card-description">5 camions porteurs dédiés au transport sécurisé de bouteilles de gaz.<br>Capacité de 8 à 25 tonnes par véhicule (Total : 78 T).</p>
+                        <a href="quote.html?service=gpl" class="btn btn-service-cta">Demandez un devis</a>
+                    </div>
+                </div>
+
+                <!-- Carte 3: Fret & Logistique -->
+                <div class="service-card">
+                    <img src="marchandises.png" alt="Fret & Logistique" class="service-card-image">
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Fret & Logistique</h3>
+                        <p class="service-card-description">10 camions fourgons ridelles haute capacité (45 tonnes).<br>Transport sécurisé de lubrifiants, cacao et marchandises générales.</p>
+                        <a href="quote.html?service=marchandises" class="btn btn-service-cta">Demandez un devis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Figures Section -->
+    
+    <!-- Notre Flotte Section -->
+    <section id="fleet" class="fleet-section">
+        <div class="container">
+            <!-- Header au-dessus du split -->
+            <div class="fleet-header">
+                <div class="fleet-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L15.09 8.26H22L17.45 12.5L19.54 18.76L12 14.51L4.46 18.76L6.55 12.5L2 8.26H8.91L12 2Z"/>
+                    </svg>
+                    NOTRE FLOTTE
+                </div>
+            </div>
+
+            <!-- Header avec titre et description -->
+            <div class="fleet-header-wrapper">
+                <h2 class="fleet-title">Une flotte moderne<br>et performante</h2>
+                <p class="fleet-description">WCA dispose d'un parc auto diversifié de 44 véhicules, entretenu au sein de notre propre garage de 10 000 m² pour garantir une disponibilité immédiate et une sécurité totale sur la route.</p>
+            </div>
+
+            <!-- Fleet Items Alternating Layout -->
+            <div class="fleet-items">
+                <!-- Item 1: Carburant & Last Mile - Texte à gauche, Image à droite -->
+                <div class="fleet-item fleet-item-reverse">
+                    <div class="fleet-item-content">
+                        <div class="fleet-item-header">
+                            <div class="fleet-item-number">29</div>
+                            <div class="fleet-item-label">camions</div>
+                        </div>
+                        <h3 class="fleet-item-title">Service Carburant & Last Mile</h3>
+                        <div class="fleet-item-info">
+                            <span class="fleet-item-capacity"><strong>706 m³</strong> capacité globale</span>
+                            <span class="fleet-item-detail">• 10 citernes de 45 m³</span>
+                            <span class="fleet-item-detail">• 2 citernes de 40 m³</span>
+                            <span class="fleet-item-detail">• 2 citernes de 38 m³</span>
+                            <span class="fleet-item-detail">• 2 citernes de 20 m³</span>
+                            <span class="fleet-item-detail">• 1 citerne de 12 m³</span>
+                            <span class="fleet-item-detail">• 12 camionnettes de 4 m³ (Last Mile)</span>
+                            <span class="fleet-item-age"><em>Âge moyen : 3-4 ans</em></span>
+                        </div>
+                    </div>
+                    <div class="fleet-item-image">
+                        <div class="carousel-container">
+                            <div class="carousel-images">
+                                <img src="caburant.png" alt="Camions Citernes 1" class="carousel-img">
+                                <img src="gpl.png" alt="Camions Citernes 2" class="carousel-img">
+                                <img src="marchandises.png" alt="Camions Citernes 3" class="carousel-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: GPL Conditionné - Image à gauche, Texte à droite -->
+                <div class="fleet-item">
+                    <div class="fleet-item-image">
+                        <div class="carousel-container">
+                            <div class="carousel-images">
+                                <img src="gpl.png" alt="Porteurs GPL 1" class="carousel-img">
+                                <img src="caburant.png" alt="Porteurs GPL 2" class="carousel-img">
+                                <img src="marchandises.png" alt="Porteurs GPL 3" class="carousel-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fleet-item-content">
+                        <div class="fleet-item-header">
+                            <div class="fleet-item-number">5</div>
+                            <div class="fleet-item-label">camions</div>
+                        </div>
+                        <h3 class="fleet-item-title">Service GPL Conditionné</h3>
+                        <div class="fleet-item-info">
+                            <span class="fleet-item-capacity"><strong>78 tonnes</strong> capacité globale</span>
+                            <span class="fleet-item-detail">• 1 porteur de 8 tonnes</span>
+                            <span class="fleet-item-detail">• 2 porteurs de 10 tonnes</span>
+                            <span class="fleet-item-detail">• 2 porteurs de 25 tonnes</span>
+                            <span class="fleet-item-age"><em>Âge moyen : 4-5 ans</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Lubrifiants & Marchandises - Texte à gauche, Image à droite -->
+                <div class="fleet-item fleet-item-reverse">
+                    <div class="fleet-item-content">
+                        <div class="fleet-item-header">
+                            <div class="fleet-item-number">10</div>
+                            <div class="fleet-item-label">camions</div>
+                        </div>
+                        <h3 class="fleet-item-title">Service Lubrifiants & Marchandises</h3>
+                        <div class="fleet-item-info">
+                            <span class="fleet-item-capacity"><strong>450 tonnes</strong> capacité globale</span>
+                            <span class="fleet-item-detail">• 10 fourgons ridelles de 45 tonnes</span>
+                            <span class="fleet-item-detail">• Capacité unitaire : 45 tonnes</span>
+                            <span class="fleet-item-age"><em>Âge moyen : 3-5 ans</em></span>
+                        </div>
+                    </div>
+                    <div class="fleet-item-image">
+                        <div class="carousel-container">
+                            <div class="carousel-images">
+                                <img src="marchandises.png" alt="Fourgons 1" class="carousel-img">
+                                <img src="gpl.png" alt="Fourgons 2" class="carousel-img">
+                                <img src="caburant.png" alt="Fourgons 3" class="carousel-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos Engagements Section -->
+    <section id="commitments" class="commitments-section">
+        <div class="container">
+            <!-- Badge -->
+            <div class="commitments-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L15.09 8.26H22L17.45 12.5L19.54 18.76L12 14.51L4.46 18.76L6.55 12.5L2 8.26H8.91L12 2Z"/>
+                </svg>
+                NOS ENGAGEMENTS
+            </div>
+
+            <!-- Titre et Sous-titre -->
+            <div class="commitments-header-layout">
+                <h2 class="commitments-main-title">Sécurité, Excellence & Innovation</h2>
+                <p class="commitments-main-subtitle">WCA s'engage à offrir un service de qualité supérieure en plaçant la sécurité, la formation et la technologie au cœur de ses opérations.</p>
+            </div>
+
+            <!-- Commitments Grid (sans cartes) -->
+            <div class="commitments-items">
+                <!-- Item 1: Sécurité & HSEQ -->
+                <div class="commitment-item">
+                    <h3 class="commitment-item-title">Sécurité & HSEQ</h3>
+                    <p class="commitment-item-subtitle">Ce que nous garantissons :</p>
+                    <ul class="commitment-item-list">
+                        <li>✅ 100 % du personnel couvert par la politique HSEQ</li>
+                        <li>✅ Maintenance préventive systématique</li>
+                        <li>✅ Causeries sécurité hebdomadaires</li>
+                        <li>✅ Analyse des risques routiers régulière</li>
+                    </ul>
+                </div>
+
+                <!-- Item 2: Formation & Discipline -->
+                <div class="commitment-item">
+                    <h3 class="commitment-item-title">Formation & Discipline</h3>
+                    <p class="commitment-item-subtitle">Ce que nous mettons en place :</p>
+                    <ul class="commitment-item-list">
+                        <li>🎓 Formation PATROM obligatoire</li>
+                        <li>🚦 Conduite défensive & éco-conduite</li>
+                        <li>🩺 Visite médicale annuelle</li>
+                        <li>🍺 Tests alcool & drogue aléatoires</li>
+                    </ul>
+                </div>
+
+                <!-- Item 3: Technologie & Traçabilité -->
+                <div class="commitment-item">
+                    <h3 class="commitment-item-title">Technologie & Traçabilité</h3>
+                    <p class="commitment-item-subtitle">Ce que nous contrôlons en temps réel :</p>
+                    <ul class="commitment-item-list">
+                        <li>📍 GPS sur 100 % de la flotte</li>
+                        <li>🎥 Caméras embarquées en cabine</li>
+                        <li>📊 Suivi du comportement de conduite</li>
+                        <li>🔐 Traçabilité complète des opérations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL: Contactez-nous -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="modal-title">Contactez West Coast Atlantic</h2>
+            <p class="modal-intro">Vous avez une question, un besoin spécifique ou souhaitez en savoir plus sur nos services logistiques ?<br>Notre équipe est à votre écoute et vous répondra dans les meilleurs délais.</p>
+            
+            <form class="modal-form" id="contactForm">
+                <div class="form-row">
+                    <input type="text" placeholder="Nom & Prénom *" required class="form-input">
+                    <input type="text" placeholder="Société *" required class="form-input">
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Fonction" class="form-input">
+                    <input type="email" placeholder="Adresse e-mail *" required class="form-input">
+                </div>
+                <div class="form-row">
+                    <input type="tel" placeholder="Numéro de téléphone *" required class="form-input">
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Objet de la demande" class="form-input">
+                </div>
+                <div class="form-row">
+                    <textarea placeholder="Message *" required class="form-textarea"></textarea>
+                </div>
+                <p class="form-reassurance">Vos informations sont traitées de manière confidentielle et utilisées uniquement pour vous recontacter.</p>
+                <button type="submit" class="btn btn-modal-submit">Envoyer le message</button>
+            </form>
+            
+            <div class="modal-success" id="contactSuccess" style="display: none;">
+                <p>Merci pour votre message.</p>
+                <p>L'équipe WCA vous contactera très prochainement.</p>
+            </div>
+        </div>
+        <div class="modal-overlay"></div>
+    </div>
+
+    <!-- MODAL: Demandez un devis -->
+    <div class="modal" id="quoteModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="modal-title">Demande de devis – Transport & logistique</h2>
+            <p class="modal-intro">Merci de nous fournir les informations nécessaires afin que nous puissions vous proposer une solution logistique adaptée à vos besoins.</p>
+            
+            <form class="modal-form" id="quoteForm">
+                <!-- Informations entreprise -->
+                <h3 class="form-section-title">Informations entreprise</h3>
+                <div class="form-row">
+                    <input type="text" placeholder="Nom & Prénom *" required class="form-input">
+                    <input type="text" placeholder="Société *" required class="form-input">
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Fonction *" required class="form-input">
+                    <input type="email" placeholder="Adresse e-mail *" required class="form-input">
+                </div>
+                <div class="form-row">
+                    <input type="tel" placeholder="Numéro de téléphone *" required class="form-input">
+                </div>
+
+                <!-- Détails de la demande -->
+                <h3 class="form-section-title">Détails de la demande</h3>
+                <div class="form-row">
+                    <select required class="form-input">
+                        <option value="">Type de service *</option>
+                        <option value="carburant">Transport carburant</option>
+                        <option value="gpl">Transport GPL conditionné</option>
+                        <option value="marchandises">Transport lubrifiants / marchandises</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Lieu de chargement" class="form-input">
+                    <input type="text" placeholder="Lieu de livraison" class="form-input">
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Volume / tonnage estimé" class="form-input">
+                    <select class="form-input">
+                        <option value="">Fréquence</option>
+                        <option value="ponctuelle">Ponctuelle</option>
+                        <option value="reguliere">Régulière</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <input type="date" placeholder="Date de démarrage souhaitée" class="form-input">
+                </div>
+                <div class="form-row">
+                    <textarea placeholder="Contraintes spécifiques (accès, sécurité, délais…)" class="form-textarea"></textarea>
+                </div>
+                
+                <p class="form-reassurance">Un membre de notre équipe commerciale analysera votre demande et vous contactera rapidement.</p>
+                <button type="submit" class="btn btn-modal-submit">Soumettre la demande</button>
+            </form>
+            
+            <div class="modal-success" id="quoteSuccess" style="display: none;">
+                <p>Votre demande de devis a bien été envoyée.</p>
+                <p>Nous vous contacterons dans les plus brefs délais.</p>
+            </div>
+        </div>
+        <div class="modal-overlay"></div>
+    </div>
+
+    <!-- Footer (loaded from footer.html) -->
+    <div id="footer-container"></div>
+
+    <script src="footer-loader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
