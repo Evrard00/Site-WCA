@@ -3513,6 +3513,18 @@ body {
     color: var(--light-text);
     line-height: 1.5;
     padding-left: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.commitment-icon {
+    flex-shrink: 0;
+    color: var(--blue-wca);
+    stroke: var(--blue-wca);
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) saturate(100%) invert(26%) sepia(99%) saturate(1269%) hue-rotate(187deg);
 }
 
 /* Responsive */
