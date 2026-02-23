@@ -35,10 +35,10 @@ function loadFooter() {
                 <h4 class="footer-title">Contact</h4>
                 <div class="footer-contact">
                     <p class="footer-label">Adresse :</p>
-                    <p class="footer-text">Abidjan, Côte d'Ivoire</p>
+                    <p class="footer-text">Marcory Zone 4, Rue Louis Lumière</p>
                     
                     <p class="footer-label">Téléphone :</p>
-                    <p class="footer-text"><a href="tel:+22524000000">+225 22 00 00 00</a></p>
+                    <p class="footer-text"><a href="tel:+225778508712">+225 07 78 50 87 12</a></p>
                     
                     <p class="footer-label">Email :</p>
                     <p class="footer-text"><a href="mailto:contact@wca-ci.com">contact@wca-ci.com</a></p>
